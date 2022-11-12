@@ -8,12 +8,15 @@
 </head>
 <body>
     <script>
-        var max = +prompt('Введите число', '15');
-        line = "";
-        for (i = 0; i < max; i++) {
-            line += "*";
-            console.log (line);
+        var max = prompt('Введите число');
+        let line = "";
+        for (let i = 1; i <= max; i++) {
+            for (let j = 1; j <= i; j++) {
+                line += "*";
+            }
+            line += "\n";
         }
+        alert(line);
     </script>
 </body>
 </html>
